@@ -1,9 +1,14 @@
-# GREENROOM
+# GREENROOM — JUNGLE UI prototype
 
-A Quiet Living Interface. iPhone Safari / GitHub Pages.
+iPhone Safari向けのUI試作です。`index.html`をGitHub Pagesのリポジトリ直下にアップロードしてください。
 
-## Publish
-Upload `index.html` to the repository root. In Settings → Pages, select Deploy from a branch / main / root.
+- JUNGLE: 鉢なし画像、5層、左右スクロール、自動配置、配置モード
+- WANDER: 植物名の選択リストから対象位置へ移動
+- MY PLANTS: 鉢あり画像の一覧、検索・フィルタ
+- CARE: 土の確認・植え替えの候補と実施記録
+- RECORD: 実施履歴
+- 植物詳細、画像2種の登録、データのJSONバックアップ
 
-## Data
-Uses existing `greenroom-plants-v1` localStorage key, preserving data when hosted at the same origin and path. Data does not sync across origins/devices. Use JSON export/import to migrate.
+**データ保存**: 植物の管理情報と履歴はlocalStorage、画像はIndexedDBに保存します。以前の `greenroom-plants-v1` がある場合、新形式に初回のみコピーします。旧データは書き換えません。端末間自動同期はありません。GitHub Pagesには端末内で登録した画像は自動アップロードされません。
+
+**注意**: iOSの端末ストレージが削除される可能性があるため、登録後はバックアップを作成してください。CAREの時期は参考的な確認リマインダーであり実測値ではありません。画像未登録の植物は仮記号として表示します。

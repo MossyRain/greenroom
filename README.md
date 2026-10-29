@@ -1,10 +1,15 @@
-GREENROOM v0.2
+# GREENROOM v0.3
 
-GitHub Pages: index.htmlをリポジトリのルートに上書きします。
-既存のlocalStorage greenroom-jungle-v1 と IndexedDB greenroom-images-v1 を引き継ぎます。
-ブラウザのデータを消さないでください。更新前にv0.1からバックアップを取ることをおすすめします。
+GitHub Pages 用。index.html と greenroom-logo.png をリポジトリ直下に配置してください。
 
-Jungle長押し：植物追加・選択。通常タップ：植物選択→配置/詳細。
-配置：ドラッグ、ピンチ拡縮、スライダー、overview、レイヤー1-5。
-settings > colors：色調整・保存・パレットの書き出し読み込み。
-settings > data：画像込みのバックアップ。
+## 主な更新
+- 配置編集のポインターキャプチャによるドラッグ安定化、ピンチ
+- fit plant による編集中の植物全体表示（原寸への復帰あり）
+- jungle の慣性スクロール
+- 編集中は背景スクロールを停止
+- 新たな暫定ロゴ画像
+- 通常の植物タッチ範囲はwanderより上
+
+## 重要
+同一Safari・同一URLなら従来のローカル植物データを引き継ぐ設計です。更新前にsettings > dataからバックアップしてください。
+画像データは端末内IndexedDBに保存されます。動作確認は実機でも行ってください。

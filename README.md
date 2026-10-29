@@ -1,10 +1,5 @@
-# GREENROOM v0.4
+# GREENROOM v0.6
 
-GitHub Pages のリポジトリ直下に `index.html`, `greenroom-logo.png`, `apple-touch-icon.png`, `icon-512.png` をアップロードしてください。
+変更：初回・再編集時のドラッグ追従性の修正。ドラッグ中のDOM再生成をやめ、ポインターIDで追跡します。ピンチ拡縮なし（サイズスライダーのみ）。jungleの空白も植物もタップで候補リストを開き、先頭の「＋ 植物を追加」から新規登録できます。長押し追加は廃止。下部メニューの高さ・配置基準を統一しました。
 
-- ホーム画面用アイコンはユーザーが指定したボタニカル画像。
-- アプリ下部ロゴは背景透過のチャコール線、線を細くして表示幅を約2/3に縮小。
-- wanderの植物名間隔を半分に調整。
-- jungleは画面下端まで描画可能、メニューは手前に配置。
-
-植物データは既存の localStorage `greenroom-jungle-v1` と IndexedDB `greenroom-images-v1` に保持されます。アップデート前に settings → data でバックアップを取ってください。
+更新：ZIPを展開し、GitHub Pagesリポジトリの index.html を置換。画像アセットはv0.5と同一です。更新前に settings > data からバックアップしてください。Safariでの実機確認は必要です。

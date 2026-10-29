@@ -1,14 +1,10 @@
-# GREENROOM — JUNGLE UI prototype
+GREENROOM v0.2
 
-iPhone Safari向けのUI試作です。`index.html`をGitHub Pagesのリポジトリ直下にアップロードしてください。
+GitHub Pages: index.htmlをリポジトリのルートに上書きします。
+既存のlocalStorage greenroom-jungle-v1 と IndexedDB greenroom-images-v1 を引き継ぎます。
+ブラウザのデータを消さないでください。更新前にv0.1からバックアップを取ることをおすすめします。
 
-- JUNGLE: 鉢なし画像、5層、左右スクロール、自動配置、配置モード
-- WANDER: 植物名の選択リストから対象位置へ移動
-- MY PLANTS: 鉢あり画像の一覧、検索・フィルタ
-- CARE: 土の確認・植え替えの候補と実施記録
-- RECORD: 実施履歴
-- 植物詳細、画像2種の登録、データのJSONバックアップ
-
-**データ保存**: 植物の管理情報と履歴はlocalStorage、画像はIndexedDBに保存します。以前の `greenroom-plants-v1` がある場合、新形式に初回のみコピーします。旧データは書き換えません。端末間自動同期はありません。GitHub Pagesには端末内で登録した画像は自動アップロードされません。
-
-**注意**: iOSの端末ストレージが削除される可能性があるため、登録後はバックアップを作成してください。CAREの時期は参考的な確認リマインダーであり実測値ではありません。画像未登録の植物は仮記号として表示します。
+Jungle長押し：植物追加・選択。通常タップ：植物選択→配置/詳細。
+配置：ドラッグ、ピンチ拡縮、スライダー、overview、レイヤー1-5。
+settings > colors：色調整・保存・パレットの書き出し読み込み。
+settings > data：画像込みのバックアップ。
